@@ -1,0 +1,59 @@
+body {
+    /* Set our FONT-FAMILY stack for Windows, Mac, and a fallback type of SANS-SERIF should either of the fonts not be available */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Set the color of all type (on elements that can inherit this) to be a dark gray */
+    color: #353739;
+    /* Set the ammount of space between lines of text, within their element */
+    /* Generally, we will use a LINE-HEIGHT between 1.25 and 1.65 depending on our chosen font(s). Characters in different fonts are not created equal, their unique characteristics will make them appear different at different sizes/line-heights */
+    font-size: 17px;
+    line-height: 1.4; /* 1.4 is the decimal equivalent of 140% */
+    /* Remove the default margin of 8px from around the BODY element */
+    margin: 0;
+}
+
+.header {
+    background-color: #8a6e82;
+    overflow: hidden;
+}
+
+.nav {
+    background-color: #a86e82;
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list-item {
+    /* There are 3 DISPLAY modes: INLINE, INLINE-BLOCK, BLOCK */
+    /* Every element has a default display mode, but we can change this */
+    /* By default our H1-H6 elements display as BLOCK, meaning they fill the full width they are given by their parent/containing element, and stack on top of other BLOCK elements */
+    /* Some BLOCK elements we have looked at this week include: H1-H6, P, DIV, HEADER, FOOTER, SECTION, ARTICLE, MAIN, ASIDE */
+    /* BLOCK elements will accept WIDTH, HEIGHT, MARGIN, PADDING and other properties/values */
+    /* INLINE-BLOCK elements behave like BLOCK and INLINE elements */
+    /* They will accept WIDTH, HEIGHT, MARGIN, PADDING and other properties/values, but only take up as much horizontal space as their content requires */
+    /* INLINE elements only take up as much horizontal space as their content requires */
+    /* INLINE elements can be used inside of BLOCK level elements */
+    /* INLINE elements generally accept different/less properties and values than BLOCK or INLINE-BLOCK elements*/
+    display: inline-block;
+    margin-right: 17px;
+}
+
+.nav-list-link:hover {
+    text-decoration: underline;
+}
+
+.nav-list-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.figure-img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: #a5a7a9;
+}
